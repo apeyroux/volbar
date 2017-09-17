@@ -1,0 +1,28 @@
+#+TITLE: xmonad volume bar
+
+* xmobarrc
+
+#+BEGIN_SRC sh
+Run Com "volbar" [] "vol" 10
+#+END_SRC
+
+* Theme
+
+https://github.com/dracula/dracula-theme
+
+* Exemple
+
+[[file:media/low.png]]
+
+[[file:media/medium.png]]
+
+[[file:media/high.png]]
+* NixOS
+** Build
+#+BEGIN_SRC sh
+nix-build
+#+END_SRC
+** Install
+#+BEGIN_SRC sh
+nix-env -i .
+#+END_SRC
