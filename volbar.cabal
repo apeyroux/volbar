@@ -18,4 +18,4 @@ executable volbar
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                      , text
-                     , alsa-mixer
+                     , alsa-mixer >= 0.2.0.3

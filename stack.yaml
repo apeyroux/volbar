@@ -1,13 +1,18 @@
-resolver: lts-9.3
+resolver: lts-12.3
 
 packages:
 - .
 
-extra-deps: []
+extra-deps: 
+  - alsa-mixer-0.2.0.3
 
 flags: {}
 
 extra-package-dbs: []
 
 nix:
-  shell-file: shell.nix
+  enable: true
+  packages: 
+    - zlib
+    - haskellPackages.alsa-core
+    - haskellPackages.alsa
